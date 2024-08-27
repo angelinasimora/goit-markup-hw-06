@@ -344,14 +344,17 @@ img {
     color: #fff;
     font-weight: 500;
     font-size: 16px;
+    flex-direction: row;
     line-height: 1.5;
     letter-spacing: 0.04em;
     height: 56px;
     display: block;
     border: none;
     border-radius: 4px;
-    margin-left: 481px;
-    margin-right: 481px;
+    /* margin-left: 481px;
+    margin-right: 481px; */
+    padding: 16px 32px;
+    margin: 0 auto;
     min-width: 169px;
     cursor: pointer;
     transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -452,6 +455,7 @@ img {
 .team-list{
     /* justify-content: center;
     flex-direction: column; */
+    min-width: 264px;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     /* flex-basis: calc(( 100% - 72px ) / 4); */
@@ -612,18 +616,16 @@ img {
 /* Footer */
 .footer{
     background: #2e2f42;
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    padding: 96px 0;
 }
 
 .footer-one{
-    margin-right: 120px;
-}
-.footer-logo{
-    display: inline-block;
-    margin-bottom: 16px;
+    /* margin-right: 120px; */
+    margin-bottom: 72px;
 }
 
-.logo-one{
+.footer-logo{
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -631,6 +633,10 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
+    /* display: inline-block; */
+    text-align: center;
+    display: block;
+    margin-bottom: 16px;
 }
 
 .logo-color-one{
@@ -642,11 +648,12 @@ img {
     color: #f4f4fd;
     font-family: "Raleway", sans-serif;
 }
-
-.footer-conteiner{
+/* 
+.footer-container{
     display: flex;
     align-items: baseline;
-}
+    padding: 96px 16px 96px 16px;
+} */
 .footer-text{
     font-weight: 400;
     font-size: 16px;
@@ -656,17 +663,23 @@ img {
     max-width: 264px;
 }
 
-.social-footer{
+.footer-two{
+    margin-bottom: 72px;
+
+}
+.social-title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    text-align: center;
 }
 .social-links{
     display: flex;
     gap: 16px;
+    justify-content: center;
 
 }
 
@@ -696,8 +709,9 @@ img {
 }
 
 .footer-three{
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
+
 .subscribe{
     font-weight: 500;
     font-size: 16px;
@@ -705,32 +719,38 @@ img {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .form-class {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
+
 .footer-input{
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: transparent;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
     padding-left: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     color: #ffffff;
+    opacity: 0.6;
 }
 .button-footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    gap: 16px;
+    /* flex-direction: row; */
+    /* gap: 16px; */
+    margin: 0 auto;
     border-radius: 4px;
     border: none;
     padding: 8px 24px;
@@ -771,7 +791,7 @@ img {
 
 .modal-overlay.is-open{
     opacity: 1;
-    visibility: visible;
+    /* visibility: visible; */
     pointer-events: auto;
 }
 .modal{
@@ -903,7 +923,8 @@ img {
 }
 
 .comment-container{
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
+    margin-bottom: 8px;
 }
 .comment-text{
     border: 1px solid rgba(46, 47, 66, 0.4);
