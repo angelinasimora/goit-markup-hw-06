@@ -387,7 +387,7 @@ img {
     display: flex;
     /* gap: 24px; */
     gap: 72px;
-}
+} 
 
 .description-tittle{
     letter-spacing: 0.02em;
@@ -547,7 +547,7 @@ img {
     margin-bottom: 72px;
 }
 
-.portfolio-list{
+.portfolio-row{
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -708,10 +708,6 @@ img {
 }
 .icon-sec-footer{
     fill: #f4f4fd;
-}
-
-.footer-three{
-    /* margin-left: 80px; */
 }
 
 .subscribe{
@@ -1057,7 +1053,7 @@ img {
     display: block;
 }
 
-/* hero */
+   /* hero */
 .hero-container {
     padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -1081,8 +1077,7 @@ img {
     gap: 72px 24px;
 }
 .description-li{
-    position: relative;
-    flex-basis: calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2);
 }
 
 .description-tittle{
@@ -1090,22 +1085,227 @@ img {
 }
 
 /* Section 2 Our Team */
+.team-row {
+    gap: 64px 24px;
+    padding: 0 92px;
+}
 
 .team-list{
     margin: 0;
-    flex-basis: calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2);
 }
 
-.team-row{
-    gap: 64px 24px;
+/* Section 3 Our portfolio */
+.portfolio-row{
+    gap: 72px 24px;
+
 }
+.portfolio-li{
+    width: calc((100% - 24px) / 2);
+}
+
+/* footer */
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-two{
+    margin-left: 24px;
+}
+
+.social-title{
+    text-align: start;
+}
+
+.subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.footer-input{
+    width: 264px;
+}
+
+/* Modal */
+.modal{
+    width: 408px;
+    min-height: 584px;
+    
+}
+/* .modal-overlay.is-open{
+    visibility: visible;
+} */
+.modal-input{
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.modal-con-checkbox{
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+}
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+.navigation{
+    display: flex;
+}
+
+.address-row{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.address-row-item{
+    font-size: 16px;
+}
+/* hero  */
+.hero-container{
+    padding: 188px 0;
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .hero-container {
+        background-image: linear-gradient
+        (rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office_2x.jpg);
+    }
+}
+
+/* Section 1 Description */
+.description-section{
+    justify-content: space-between;
+    padding: 120px 0; 
+}
+
+.description-li{
+    display: flex;
+        flex-direction: column;
+        position: relative;
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+.description-row{
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.description-tittle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.description-text{
+    font-weight: 400;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+}
+
+/* Section 2 Our Team */
+.our-team{
+    padding: 120px 0;
+}
+.team-row{
+    gap: 24px;
+    flex-wrap: nowrap;
+}
+.team-list{
+    justify-content: center;
+    flex-direction: column;
+    width: calc((100% - 72px) / 4);
+}
+
+/* Our portfolio */
+.our-portfolio{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.portfolio-row{
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfolio-li {
+    width: calc((100% - 48px) / 3);
+}
+/* Footer */
+
+.footer{
+    padding: 100px 0;
+}
+.footer-container {
+    display: flex;
+        flex-wrap: nowrap;
+}
+
+.footer-one{
+    margin-right: 120px;
+}
+.footer-logo{
+    display: inline-block;
+}
+.footer-text{
+    width: 264px;
+}
+
+.footer-two{
+    margin-right: 80px;
+}
+.footer-three{
+    margin-right: auto;
+
+}
+
+.form-class{
+    display: flex;
+}
+
+.footer-input{
+    width: 264px;
+}
+
+.button-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    
+}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-
-    .our-team>.container,
     .footer>.container {
         width: 552px;
     }
-
 }
