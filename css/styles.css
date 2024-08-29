@@ -1288,6 +1288,7 @@ img {
 
 .form-class{
     display: flex;
+    flex-wrap: nowrap;
     gap: 24px;
 }
 
